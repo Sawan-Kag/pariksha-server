@@ -22,7 +22,7 @@ import com.sawan.exam.serviceInterface.UserService;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class UserController {
 
  @Autowired

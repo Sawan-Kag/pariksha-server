@@ -12,7 +12,7 @@ import com.sawan.exam.serviceInterface.QuizService;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/quiz")
 public class QuizController {
