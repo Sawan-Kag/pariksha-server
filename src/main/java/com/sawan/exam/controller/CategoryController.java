@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sawan.exam.models.Category;
 import com.sawan.exam.serviceInterface.CategoryService;
 
-@CrossOrigin(origins = "*", allowCredentials = "true")
+@CrossOrigin(origins = "https://pariksha-server-production.up.railway.app", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/categories")
 public class CategoryController {
