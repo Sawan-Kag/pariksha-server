@@ -97,6 +97,7 @@ public class QuestionController {
     public ResponseEntity<?> evalQuiz(@RequestBody List<Question> questions) {
         System.out.println(questions);
         double marksGot = 0;
+        String formattedMarksGot = "";
         int correctAnswers = 0;
         int attempted = 0;
         for (Question q : questions) {
@@ -109,6 +110,7 @@ public class QuestionController {
                 double marksSingle = Double.parseDouble(questions.get(0).getQuiz().getMaxMarks()) / questions.size();
 //                       this.questions[0].quiz.maxMarks / this.questions.length;
                 marksGot += marksSingle;
+                 formattedMarksGot = String.format("%.2f", marksGot);
 
             }
 
@@ -119,7 +121,7 @@ public class QuestionController {
         }
         ;
 
-        Map<String, Object> map = Map.of("marksGot", marksGot, "correctAnswers", correctAnswers, "attempted", attempted);
+        Map<String, Object> map = Map.of("marksGot", formattedMarksGot, "correctAnswers", correctAnswers, "attempted", attempted);
         return ResponseEntity.ok(map);
 
     }
