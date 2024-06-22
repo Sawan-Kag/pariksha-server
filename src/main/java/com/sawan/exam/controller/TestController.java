@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 
 //for Angular Client (withCredentials)
 //@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600, allowCredentials="true")
-@CrossOrigin(origins = "https://pariksha-server-production.up.railway.app", allowCredentials = "true")
+@CrossOrigin(origins = "https://sawan-kag.github.io", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/test")
 public class TestController {

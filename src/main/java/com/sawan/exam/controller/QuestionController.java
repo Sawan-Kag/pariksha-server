@@ -24,7 +24,7 @@ import com.sawan.exam.models.Quiz;
 import com.sawan.exam.serviceInterface.QuestionService;
 import com.sawan.exam.serviceInterface.QuizService;
 
-@CrossOrigin(origins = "https://pariksha-server-production.up.railway.app", allowCredentials = "true")
+@CrossOrigin(origins = "https://sawan-kag.github.io", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/user/question")
 public class QuestionController {

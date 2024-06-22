@@ -12,7 +12,7 @@ import com.sawan.exam.serviceInterface.QuizService;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://pariksha-server-production.up.railway.app", allowCredentials = "true")
+@CrossOrigin(origins = "https://sawan-kag.github.io", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/quiz")
 public class QuizController {

@@ -41,7 +41,6 @@ import com.sawan.exam.models.User;
 import com.sawan.exam.repository.RoleRepository;
 import com.sawan.exam.repository.UserRepository;
 import com.sawan.exam.serviceImple.RefreshTokenService;
-import com.sawan.exam.serviceImple.RoleServiceImple;
 import com.sawan.exam.serviceImple.UserDetailsImpl;
 import com.sawan.exam.serviceImple.UserDetailsServiceImpl;
 
@@ -49,7 +48,7 @@ import com.sawan.exam.serviceImple.UserDetailsServiceImpl;
 
 //for Angular Client (withCredentials)
 //@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600, allowCredentials="true")
-@CrossOrigin(origins = "https://pariksha-server-production.up.railway.app", allowCredentials = "true")
+@CrossOrigin(origins = "https://sawan-kag.github.io", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
